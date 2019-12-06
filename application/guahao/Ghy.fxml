@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GhyController">
+   <children>
+      <MenuButton layoutY="54.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="166.0" text="MenuButton">
+        <items>
+          <MenuItem fx:id="GuaHao" mnemonicParsing="false" onAction="#guahaoYeMian" text="挂号" />
+          <MenuItem mnemonicParsing="false" onAction="#tuihaoYeMian" text="退号" />
+            <MenuItem mnemonicParsing="false" onAction="#jiaofeiyemian" text="收费" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <Label prefHeight="53.0" prefWidth="600.0" text="东软云医院HIS系统">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font></Label>
+      <Button fx:id="but_" layoutX="1178.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="122.0" text="退出" />
+   </children>
+</AnchorPane>

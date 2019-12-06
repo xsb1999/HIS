@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BingRenXinXi.BingRenXinXiController">
+   <children>
+      <Label layoutX="54.0" layoutY="50.0" text="请输入科室或病种名称" />
+      <TextField fx:id="text1" layoutX="221.0" layoutY="45.0" prefHeight="29.0" prefWidth="173.0" />
+      <Button fx:id="cx" layoutX="466.0" layoutY="45.0" mnemonicParsing="false" onAction="#chaxun" prefHeight="29.0" prefWidth="80.0" text="查询" />
+      <TableView fx:id="T1" layoutX="139.0" layoutY="161.0" prefHeight="376.0" prefWidth="249.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="病历号" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="姓名" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="T2" layoutX="466.0" layoutY="161.0" prefHeight="376.0" prefWidth="173.0">
+        <columns>
+          <TableColumn fx:id="c3" prefWidth="75.0" text="病种名称" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="139.0" layoutY="133.0" text="病人列表" />
+      <Label layoutX="466.0" layoutY="133.0" text="所患病种" />
+      <Button layoutX="614.0" layoutY="45.0" mnemonicParsing="false" onAction="#sortingID" prefHeight="29.0" prefWidth="80.0" text="ID排序" />
+      <Button layoutX="709.0" layoutY="45.0" mnemonicParsing="false" onAction="#sortingName" text="姓名排序" />
+      <Button mnemonicParsing="false" onAction="#qingkong" prefHeight="29.0" prefWidth="80.0" text="清空" />
+   </children>
+</AnchorPane>

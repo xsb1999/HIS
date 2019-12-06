@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.nurse.NurseController">
+   <children>
+      <Label layoutX="138.0" layoutY="50.0" text="请输入要查询的医生姓名" />
+      <TextField fx:id="tf" layoutX="314.0" layoutY="45.0" />
+      <TableView fx:id="TT" layoutX="108.0" layoutY="202.0" prefHeight="330.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="病历号" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="姓名" />
+            <TableColumn fx:id="c3" prefWidth="75.0" text="年龄" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="jiaji" layoutX="587.0" layoutY="394.0" mnemonicParsing="false" onAction="#jiaji" prefHeight="38.0" prefWidth="85.0" text="加急" />
+      <Label layoutX="108.0" layoutY="169.0" text="患者信息" />
+      <TextField fx:id="ListText" layoutX="189.0" layoutY="164.0" prefHeight="29.0" prefWidth="515.0" />
+      <Label fx:id="speciallabel" layoutX="361.0" layoutY="103.0" prefHeight="19.0" prefWidth="107.0" visible="false" />
+      <Button fx:id="chaxun" layoutX="562.0" layoutY="45.0" mnemonicParsing="false" onAction="#chaxun" prefHeight="29.0" prefWidth="76.0" text="查询" />
+      <Label fx:id="cg" layoutX="556.0" layoutY="300.0" prefHeight="48.0" prefWidth="165.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#qingkong" prefHeight="29.0" prefWidth="76.0" text="清空" />
+   </children>
+</AnchorPane>

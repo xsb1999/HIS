@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GhyController">
+   <children>
+      <Label layoutX="462.0" layoutY="189.0" text="姓名" />
+      <Label layoutX="225.0" layoutY="189.0" text="病历号" />
+      <Label layoutX="943.0" layoutY="189.0" text="年龄" />
+      <TextArea fx:id="NameText" layoutX="500.0" layoutY="184.0" prefHeight="30.0" prefWidth="115.0" />
+      <Button fx:id="GuaHaoButton" layoutX="739.0" layoutY="538.0" mnemonicParsing="false" onAction="#guahao" prefHeight="40.0" prefWidth="84.0" text="挂号" />
+      <Label layoutX="477.0" layoutY="403.0" text="医生" />
+      <TextArea fx:id="RandomText" layoutX="277.0" layoutY="184.0" prefHeight="30.0" prefWidth="115.0" />
+      <Label fx:id="guahaosuccess" layoutX="462.0" layoutY="34.0" prefHeight="105.0" prefWidth="409.0">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Button layoutX="435.0" layoutY="538.0" mnemonicParsing="false" onAction="#qingkong" prefHeight="40.0" prefWidth="84.0" text="清空" />
+      <Label layoutX="709.0" layoutY="189.0" text="性别" />
+      <Label layoutX="203.0" layoutY="402.0" text="挂号科室" />
+      <TextArea fx:id="cashText" layoutX="771.0" layoutY="397.0" prefHeight="30.0" prefWidth="115.0" />
+      <Label layoutX="697.0" layoutY="283.0" prefHeight="30.0" prefWidth="84.0" text="看诊日期" />
+      <Label layoutX="447.0" layoutY="288.0" text="结算类别" />
+      <Label layoutX="218.0" layoutY="298.0" text="号别" />
+      <Label layoutX="929.0" layoutY="402.0" text="收费方式" />
+      <TextArea fx:id="AgeText" layoutX="984.0" layoutY="184.0" prefHeight="30.0" prefWidth="115.0" />
+      <Label layoutX="694.0" layoutY="402.0" text="应收金额" />
+      <Label layoutX="970.0" layoutY="283.0" prefHeight="29.0" prefWidth="39.0" text="午别" />
+      <Button fx:id="but_" layoutX="1188.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="122.0" text="退出" />
+      <Label prefHeight="53.0" prefWidth="600.0" text="东软云医院HIS系统">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <MenuButton layoutY="54.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="166.0" text="MenuButton">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <items>
+            <MenuItem fx:id="GuaHao" mnemonicParsing="false" onAction="#guahaoYeMian" text="挂号" />
+            <MenuItem mnemonicParsing="false" onAction="#tuihaoYeMian" text="退号" />
+            <MenuItem mnemonicParsing="false" onAction="#qiehuan" text="收费" />
+         </items>
+      </MenuButton>
+      <DatePicker fx:id="dateText" layoutX="765.0" layoutY="285.0" prefHeight="29.0" prefWidth="142.0" />
+      <ChoiceBox fx:id="choicebox1" layoutX="747.0" layoutY="184.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="203.0" layoutY="466.0" prefHeight="29.0" prefWidth="60.0" text="病历本" />
+      <CheckBox fx:id="checkbox2" layoutX="263.0" layoutY="470.0" mnemonicParsing="false" />
+      <ChoiceBox fx:id="choicebox3" layoutX="1010.0" layoutY="283.0" prefHeight="29.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="choicebox5" layoutX="266.0" layoutY="293.0" prefHeight="29.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="choicebox4" layoutX="277.0" layoutY="397.0" prefHeight="29.0" prefWidth="107.0" />
+      <ChoiceBox fx:id="choicebox6" layoutX="996.0" layoutY="397.0" prefHeight="29.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="choicebox2" layoutX="525.0" layoutY="283.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="225.0" layoutY="113.0" prefHeight="30.0" prefWidth="60.0" text="患者编号" />
+      <TextArea fx:id="IdpText" layoutX="291.0" layoutY="113.0" prefHeight="30.0" prefWidth="115.0" />
+      <ChoiceBox fx:id="choiceboxdoc" layoutX="518.0" layoutY="398.0" prefHeight="29.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="jinji" layoutX="558.0" layoutY="114.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="477.0" layoutY="119.0" text="是否紧急" />
+      <Label fx:id="hzbh" layoutX="900.0" layoutY="99.0" prefHeight="40.0" prefWidth="240.0" />
+      
+   </children>
+</AnchorPane>

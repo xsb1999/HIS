@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoctorController">
+   <children>
+      <MenuButton mnemonicParsing="false" text="门诊医生">
+        <items>
+          <MenuItem fx:id="menzhenbingli" mnemonicParsing="false" onAction="#showToSeeListtom" text="门诊病历" />
+          <MenuItem fx:id="brxx" mnemonicParsing="false" onAction="#showChaXun" text="病人信息查询" />
+            <MenuItem mnemonicParsing="false" text="处方模板" />
+        </items>
+      </MenuButton>
+      <Button fx:id="b1" layoutX="1492.0" layoutY="6.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="100.0" text="退出" />
+   </children>
+</AnchorPane>
