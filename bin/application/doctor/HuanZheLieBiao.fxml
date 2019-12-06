@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="1313.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoctorController">
+   <children>
+      <TextArea fx:id="ListText1" layoutX="502.0" layoutY="54.0" prefHeight="29.0" prefWidth="574.0" text="  请选择患者">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="门诊医生">
+        <items>
+          <MenuItem mnemonicParsing="false" text="门诊病历" />
+          <MenuItem mnemonicParsing="false" text="西药处方模板" />
+            <MenuItem mnemonicParsing="false" text="中药处方模板" />
+        </items>
+      </MenuButton>
+      <Button fx:id="b11" layoutX="1492.0" layoutY="6.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="100.0" text="退出" />
+      <SplitPane dividerPositions="0.2" layoutX="137.0" layoutY="95.0" prefHeight="697.0" prefWidth="1140.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="table1" prefHeight="329.0" prefWidth="224.0">
+                    <columns>
+                      <TableColumn fx:id="id1" prefWidth="75.0" text="病历号" />
+                      <TableColumn fx:id="name1" prefWidth="75.0" text="姓名" />
+                        <TableColumn fx:id="age1" prefWidth="75.0" text="年龄" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="table11" layoutX="-4.0" layoutY="359.0" prefHeight="336.0" prefWidth="233.0">
+                    <columns>
+                      <TableColumn fx:id="id11" prefWidth="75.0" text="病历号" />
+                      <TableColumn fx:id="name11" prefWidth="75.0" text="姓名" />
+                        <TableColumn fx:id="age11" prefWidth="75.0" text="年龄" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="-4.0" layoutY="337.0" prefHeight="19.0" prefWidth="277.0" text="已诊患者：">
+                     <font>
+                        <Font name="Aparajita" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="832.0" prefWidth="1149.0">
+               <children>
+                  <ToolBar layoutX="9.0" layoutY="8.0" prefHeight="43.0" prefWidth="934.0">
+                    <items>
+                      <Button fx:id="bingliBut_" mnemonicParsing="false" prefHeight="29.0" prefWidth="266.0" text="病历首页" />
+                        <Button fx:id="chufangBut_" mnemonicParsing="false" onAction="#qiehuan1" prefHeight="29.0" prefWidth="266.0" text="成药处方" />
+                    </items>
+                  </ToolBar>
+                  <Label layoutX="81.0" layoutY="85.0" text="主诉" />
+                  <Label layoutX="70.0" layoutY="195.0" text="既往史" />
+                  <Label layoutX="74.0" layoutY="135.0" text="现病史" />
+                  <Label layoutX="61.0" layoutY="319.0" text="体格检查" />
+                  <Label layoutX="69.0" layoutY="253.0" text="过敏史" />
+                  <Label layoutX="67.0" layoutY="476.0" text="注意事项" />
+                  <Label layoutX="67.0" layoutY="430.0" text="检查建议" />
+                  <Label layoutX="51.0" layoutY="375.0" text="现病治疗情况" />
+                  <TextField fx:id="Text1" layoutX="171.0" layoutY="80.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text5" layoutX="177.0" layoutY="314.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text4" layoutX="171.0" layoutY="248.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text2" layoutX="171.0" layoutY="130.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text3" layoutX="171.0" layoutY="190.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text6" layoutX="179.0" layoutY="372.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text7" layoutX="177.0" layoutY="425.0" prefHeight="29.0" prefWidth="574.0" />
+                  <TextField fx:id="Text8" layoutX="179.0" layoutY="481.0" prefHeight="29.0" prefWidth="574.0" />
+                  <Button fx:id="tijiao1" layoutX="640.0" layoutY="556.0" mnemonicParsing="false" onAction="#submit" prefHeight="29.0" prefWidth="77.0" text="提交" />
+                  <Button fx:id="qingkong1" layoutX="496.0" layoutY="556.0" mnemonicParsing="false" onAction="#qingkong" prefHeight="29.0" prefWidth="77.0" text="清空" />
+                  <Label fx:id="submitsuccess" layoutX="890.0" layoutY="505.0" prefHeight="57.0" prefWidth="171.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="speciallabel" layoutX="785.0" layoutY="253.0" prefHeight="19.0" prefWidth="52.0" visible="false" />
+               </children>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="415.0" layoutY="54.0" prefHeight="29.0" prefWidth="68.0" text="患者信息" />
+      <Button layoutX="137.0" layoutY="25.0" mnemonicParsing="false" onAction="#shuaxin" prefHeight="29.0" prefWidth="77.0" text="刷新" />
+      <Label layoutX="138.0" layoutY="74.0" prefHeight="19.0" prefWidth="277.0" text="未诊患者：" />
+   </children>
+</AnchorPane>

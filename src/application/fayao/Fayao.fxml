@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FayaoController">
+   <children>
+      <Label layoutX="201.0" layoutY="102.0" text="药房发药">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="194.0" prefHeight="24.0" prefWidth="73.0" text="病历号：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="chaxun" layoutX="505.0" layoutY="192.0" mnemonicParsing="false" onAction="#chaxun" prefHeight="29.0" prefWidth="73.0" text="查询" />
+      <TextField fx:id="text" layoutX="301.0" layoutY="192.0" />
+      <TableView fx:id="T" layoutX="201.0" layoutY="319.0" prefHeight="298.0" prefWidth="556.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="211.0" text="药品名称" />
+          <TableColumn fx:id="c2" prefWidth="130.0" text="数量" />
+            <TableColumn fx:id="c3" prefWidth="214.0" text="单价" />
+        </columns>
+      </TableView>
+      <Button fx:id="fayao" layoutX="840.0" layoutY="429.0" mnemonicParsing="false" onAction="#queren" prefHeight="39.0" prefWidth="100.0" text="发药">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="shuaxin" layoutX="92.0" layoutY="51.0" mnemonicParsing="false" onAction="#shuaxin" prefHeight="29.0" prefWidth="73.0" text="刷新" />
+      <Label fx:id="lab" layoutX="689.0" layoutY="177.0" prefHeight="59.0" prefWidth="420.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="l" layoutX="890.0" layoutY="139.0" prefHeight="19.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>

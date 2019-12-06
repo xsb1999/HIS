@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ZengFangController">
+   <children>
+      <Label layoutX="23.0" layoutY="160.0" prefHeight="27.0" prefWidth="255.0" text="请输入想要删除的药方名称">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TT" layoutX="278.0" layoutY="159.0" />
+      <Button fx:id="BB" layoutX="493.0" layoutY="159.0" mnemonicParsing="false" onAction="#ShanFang" prefHeight="29.0" prefWidth="72.0" text="确认" />
+      <Label fx:id="LL" layoutX="234.0" layoutY="74.0" prefHeight="40.0" prefWidth="132.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

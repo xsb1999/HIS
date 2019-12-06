@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/fastjson-1.2.58.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
